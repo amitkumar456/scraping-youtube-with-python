@@ -21,3 +21,8 @@ print("Description :",yt.description)
 # To get ratings
 print("Ratings :", yt.rating)
 
+
+stream=yt.streams.get_highest_resolution()
+stream.download()
+print("Download Completed!!")
+
